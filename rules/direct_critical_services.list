@@ -1,0 +1,55 @@
+# Surge RULE-SET: Critical DIRECT services
+# Purpose: Ensure essential system services (DNS/DoH, NTP, captive portal) and critical payment/banking
+# domains as well as major Tencent/Bytedance platforms are routed DIRECT to avoid proxy-related issues.
+#
+# Usage example (in Surge profile):
+# RULE-SET,https://raw.githubusercontent.com/<your-namespace>/surge-guize/main/rules/direct_critical_services.list,DIRECT
+#
+# Notes:
+# - Each line below contains only the rule type and value (no policy), suitable for remote RULE-SET import.
+# - Encoding: UTF-8 with LF line endings.
+# - Keep this file minimal and focused on latency/availability-critical domains.
+
+DOMAIN,dns.alidns.com
+DOMAIN,doh.pub
+DOMAIN,dns.weixin.qq.com
+DOMAIN,dns.weixin.qq.com.cn
+DOMAIN,time.apple.com
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN,ntp.aliyun.com
+DOMAIN,ntp.ntsc.ac.cn
+DOMAIN,cn.ntp.org.cn
+DOMAIN,captive.apple.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,wx.qq.com
+DOMAIN-SUFFIX,wechatpay.cn
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,ccb.com
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,abcchina.com
+DOMAIN-SUFFIX,abcchina.com.cn
+DOMAIN-SUFFIX,psbc.com
+DOMAIN-SUFFIX,unionpay.cn
+DOMAIN-SUFFIX,95516.com
+DOMAIN-SUFFIX,cebbank.com
+DOMAIN-SUFFIX,spdb.com.cn
+DOMAIN-SUFFIX,pingan.com.cn
+DOMAIN-SUFFIX,citicbank.com
+DOMAIN-SUFFIX,cib.com.cn
+DOMAIN-SUFFIX,bankcomm.com
+DOMAIN-SUFFIX,cmbc.com.cn
+DOMAIN-SUFFIX,hxbank.com.cn
+DOMAIN-SUFFIX,shbank.com
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,gtimg.cn
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,volccdn.com
