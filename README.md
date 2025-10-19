@@ -12,12 +12,12 @@ A curated list for routing essential services DIRECT to ensure reliability and l
 - Key Tencent and Bytedance domains
 
 File path:
-- `rules/direct_critical_services.list`
+- `rules/direct.list`
 
 Usage in Surge (example):
 
 ```
-RULE-SET,https://raw.githubusercontent.com/<your-namespace>/surge-guize/main/rules/direct_critical_services.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/chx86996/surge-guize/main/rules/direct.list,DIRECT,no-resolve
 ```
 
 Notes:
