@@ -1,0 +1,36 @@
+#!name=thirdparty-rules
+#!desc=Third-party RULE-SET references (auto-updates from upstream)
+
+[Rule]
+RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/ruleset/private.txt,DIRECT,no-resolve
+# 微信专项规则集直连
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/WeChat/WeChat.list,DIRECT,extended-matching,no-resolve
+# Apple / iCloud 服务分流
+RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/ruleset/icloud.txt,Apple,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/ruleset/apple.txt,Apple,update-interval=259200,no-resolve
+# 独立 App 分流
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Telegram/Telegram.list,Telegram,extended-matching,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/YouTube/YouTube.list,YouTube,extended-matching,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Crypto.list,加密货币,extended-matching,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Spotify/Spotify.list,HKc,extended-matching,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/GitHub/GitHub.list,HKc,extended-matching,update-interval=259200,no-resolve
+# 开发 / AI 服务分流
+RULE-SET,https://cdn.jsdelivr.net/gh/fmz200/wool_scripts@main/Loon/rule/AI.list,智能助理,update-interval=259200,no-resolve
+# 国外常用服务
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/TikTok/TikTok.list,TikTok,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Twitter/Twitter.list,HKc,extended-matching,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Whatsapp/Whatsapp.list,HKc,extended-matching,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Google/Google.list,谷歌服务,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Microsoft/Microsoft.list,微软服务,update-interval=259200,no-resolve
+# 哔哩哔哩（若无同名策略组，请改为 HKc 或其他）
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/BiliBili/BiliBili.list,哔哩哔哩
+# 中国域名/媒体直连与常见直连白名单
+RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list,DIRECT,update-interval=86400,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list,DIRECT,update-interval=86400,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/ruleset/direct.txt,DIRECT,update-interval=259200,no-resolve
+# 可按需启用国内 IP 段直连
+# RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaIp.list,DIRECT,update-interval=604800,no-resolve
+# IP/CIDR 分流
+RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/telegramcidr.txt,Telegram,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list,DIRECT,update-interval=259200,no-resolve
+RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/ruleset/cncidr.txt,DIRECT,update-interval=259200,no-resolve
