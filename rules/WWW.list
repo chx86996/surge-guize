@@ -1,7 +1,2 @@
-DOMAIN-SUFFIX,aistudio.google.com
-
-
-
-
-DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+IP-CIDR,192.3.150.130/32,DIRECT,no-resolve
 
